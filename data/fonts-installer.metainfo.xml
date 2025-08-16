@@ -1,0 +1,34 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <launchable type="desktop-id">fonts-installer.desktop</launchable>
+  <name>fonts-installer</name>
+  <summary>A Qt6 GUI tool to install mscorefonts on Linux.</summary>
+  <metadata_license>Apache-2.0</metadata_license>
+  <project_license>Apache-2.0</project_license>
+  <url type="homepage">https://github.com/HarveyDevel/fonts-installer</url>
+  <url type="bugtracker">https://github.com/HarveyDevel/fonts-installer/issues</url>
+  <description>
+    <p>A Qt6 GUI tool to install mscorefonts on Linux.</p>
+    
+    Available fonts:
+    <ul>
+      <li>Andale Mono</li>
+      <li>Arial (regular, bold, italic, bold italic)</li>
+      <li>Arial Black</li>
+      <li>Comic Sans MS (regular, bold)</li>
+      <li>Courier New (regular, bold, italic, bold italic)</li>
+      <li>Georgia (regular, bold, italic, bold italic)</li>
+      <li>Impact</li>
+      <li>Times New Roman (regular, bold, italic, bold italic)</li>
+      <li>Trebuchet MS (regular, bold, italic, bold italic)</li>
+      <li>Verdana (regular, bold, italic, bold italic)</li>
+      <li>Webdings</li>
+    </ul>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://raw.githubusercontent.com/HarveyDevel/fonts-installer/refs/heads/master/data/images/screenshot.png</image>
+    </screenshot>
+  </screenshots>
+</component>

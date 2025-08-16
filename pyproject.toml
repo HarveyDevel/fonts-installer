@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fonts-installer"
+version = "1.0.0"
+license = "Apache-2.0"
+authors = [
+    {name = "Troy Harvey", email = "harveydevel@gmail.com"}
+]
+description = "A Qt6 GUI tool to download and install Microsoft Core Fonts on Linux."
+readme = "README.md"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "requests",
+    "PySide6",
+]
+
+[project.urls]
+Homepage = "https://github.com/HarveyDevel/fonts-installer"
+Issues = "https://github.com/HarveyDevel/fonts-installer/issues/new/"
+
+[project.scripts]
+fonts-installer = "fonts_installer.main:main"
+
+[tool.hatch.build.targets.wheel.shared-data]
+"data/fonts-installer.desktop" = "share/applications/fonts-installer.desktop"
+"data/fonts-installer.metainfo.xml" = "share/metainfo/fonts-installer.metainfo.xml"

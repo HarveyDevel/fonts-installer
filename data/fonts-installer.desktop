@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Fonts Installer
+Comment=A Qt6 GUI tool to download and install Microsoft Core Fonts.
+Terminal=false
+Type=Application
+Categories=Utility;
+StartupNotify=false
+Exec=fonts-installer
+Keywords=fonts;corefonts;mscorefonts;microsoft;
