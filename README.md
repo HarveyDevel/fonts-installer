@@ -25,6 +25,7 @@ It does not track what files it installs so it only provides an option to remove
 mscorefonts cannot be included in Linux distribution repositories because of licensing issues. However `fonts-installer` can be, making font installation easy for novice users.
 
 #### Dependencies
+- Python 3.12+ ([case_sensitive](https://docs.python.org/3.12/whatsnew/3.12.html#pathlib) was added)
 - [requests](https://pypi.org/project/requests/)
 - [PySide6](https://pypi.org/project/PySide6/)
 - Qt6
