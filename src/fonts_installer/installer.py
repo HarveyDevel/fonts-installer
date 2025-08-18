@@ -77,7 +77,7 @@ class FontInstallerThread(QThread):
                         "*.ttf", case_sensitive=False
                     ):
                         shutil.copy(ttf_file, FONT_INSTALL_DIR / ttf_file.name.lower())
-                        self.log_signal.emit(f"Installed font: {ttf_file.name}")
+                        self.log_signal.emit(f"Installed font: {ttf_file.name.lower()}")
 
             self.log_signal.emit("Updating font cache...")
             fonts_cached = subprocess.run(
