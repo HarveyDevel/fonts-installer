@@ -116,7 +116,8 @@ class MSCoreFontsApp(QMainWindow):
                 Author: Troy Harvey<br />
                 License: Apache-2.0<br />
                 Source code available on <a href="https://github.com/HarveyDevel/fonts-installer">GitHub</a><br /><br />
-                Fonts are downloaded from <a href="https://corefonts.sourceforge.net/">corefonts SourceForge</a><br />
+                All fonts are subject to <a href="https://corefonts.sourceforge.net/eula.htm">Microsoft's EULA</a> and
+                are downloaded from <a href="https://corefonts.sourceforge.net/">corefonts SourceForge</a><br />
                 """
             ),
         )
