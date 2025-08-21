@@ -1,9 +1,11 @@
 import sys
+from PySide6.QtGui import QIcon
 from PySide6.QtWidgets import (
     QApplication,
     QDialog,
     QMessageBox,
 )
+
 from .gui import (
     EULADialog,
     MSCoreFontsApp,
@@ -13,6 +15,7 @@ from .utils import load_eula
 
 def main():
     app = QApplication(sys.argv)
+    app.setWindowIcon(QIcon.fromTheme("application-x-font-ttf"))
 
     try:
         eula = load_eula()
