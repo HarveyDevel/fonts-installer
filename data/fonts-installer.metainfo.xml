@@ -1,17 +1,16 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
+  <id>io.github.HarveyDevel.fonts-installer</id>
   <launchable type="desktop-id">fonts-installer.desktop</launchable>
   <name>fonts-installer</name>
-  <summary>A Qt6 GUI tool to install mscorefonts on Linux.</summary>
-  <metadata_license>Apache-2.0</metadata_license>
+  <summary>A Qt6 GUI tool to install mscorefonts on Linux</summary>
+  <metadata_license>CC0-1.0</metadata_license>
   <project_license>Apache-2.0</project_license>
   <url type="homepage">https://github.com/HarveyDevel/fonts-installer</url>
   <url type="bugtracker">https://github.com/HarveyDevel/fonts-installer/issues</url>
   <description>
     <p>A Qt6 GUI tool to install mscorefonts on Linux.</p>
-    
-    Available fonts:
+    <p>Available fonts:</p>
     <ul>
       <li>Andale Mono</li>
       <li>Arial (regular, bold, italic, bold italic)</li>
