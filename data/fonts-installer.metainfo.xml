@@ -6,6 +6,10 @@
   <summary>A Qt6 GUI tool to install mscorefonts on Linux</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>Apache-2.0</project_license>
+  <icon type="stock">application-x-font-ttf</icon>
+  <categories>
+    <category>Utility</category>
+  </categories>
   <url type="homepage">https://github.com/HarveyDevel/fonts-installer</url>
   <url type="bugtracker">https://github.com/HarveyDevel/fonts-installer/issues</url>
   <description>
