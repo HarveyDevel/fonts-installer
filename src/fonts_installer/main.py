@@ -15,7 +15,7 @@ from .utils import load_eula
 
 def main():
     app = QApplication(sys.argv)
-    app.setWindowIcon(QIcon.fromTheme("application-x-font-ttf"))
+    app.setWindowIcon(QIcon.fromTheme("fonts-installer"))
 
     try:
         eula = load_eula()

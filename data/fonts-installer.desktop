@@ -5,6 +5,6 @@ Terminal=false
 Type=Application
 Categories=Utility;
 StartupNotify=false
-Icon=application-x-font-ttf
+Icon=fonts-installer
 Exec=fonts-installer
 Keywords=fonts;corefonts;mscorefonts;microsoft;

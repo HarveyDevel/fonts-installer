@@ -7,6 +7,12 @@ fonts-installer downloads mscorefonts from [corefonts](https://sourceforge.net/p
 **Please note:**
 It does not track what files it installs so it only provides an option to remove the entire mscorefonts install folder and when installing it will overrite any file .ttf files with the same name already in ~/.local/share/fonts/mscorefonts.
 
+# Icon
+
+The icon fonts-installer.svg is taken from breeze-icons.
+
+[Breeze icons](https://api.kde.org/frameworks/breeze-icons/html/index.html) copyright KDE and licenced under the GNU LGPL version 3 or later
+
 #### Available fonts
 - Andale Mono
 - Arial (regular, bold, italic, bold italic)

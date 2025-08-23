@@ -31,3 +31,4 @@ fonts-installer = "fonts_installer.main:main"
 [tool.hatch.build.targets.wheel.shared-data]
 "data/fonts-installer.desktop" = "share/applications/fonts-installer.desktop"
 "data/fonts-installer.metainfo.xml" = "share/metainfo/fonts-installer.metainfo.xml"
+"data/icon/fonts-installer.svg" = "share/icons/hicolor/scalable/apps/fonts-installer.svg"
