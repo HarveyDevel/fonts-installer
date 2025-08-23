@@ -116,6 +116,8 @@ class MSCoreFontsApp(QMainWindow):
                 Author: Troy Harvey<br />
                 License: Apache-2.0<br />
                 Source code available on <a href="https://github.com/HarveyDevel/fonts-installer">GitHub</a><br /><br />
+                Icon taken from breeze-icons.<br />
+                <a href="https://api.kde.org/frameworks/breeze-icons/html/index.html">Breeze icons</a> copyright KDE and licenced under the GNU LGPL version 3 or later. <br /><br />
                 All fonts are subject to <a href="https://corefonts.sourceforge.net/eula.htm">Microsoft's EULA</a> and
                 are downloaded from <a href="https://corefonts.sourceforge.net/">corefonts SourceForge</a><br />
                 """
