@@ -54,7 +54,7 @@ class MSCoreFontsApp(QMainWindow):
 
         central = QWidget()
         self.setCentralWidget(central)
-        self.layout = QVBoxLayout(central)
+        self.main_layout = QVBoxLayout(central)
 
         menu_bar = self.menuBar()
 
@@ -63,7 +63,7 @@ class MSCoreFontsApp(QMainWindow):
         about_action.triggered.connect(self.show_about_dialog)
 
         label = QLabel("Select fonts to download and install:")
-        self.layout.addWidget(label)
+        self.main_layout.addWidget(label)
 
         scroll_area = QScrollArea()
         scroll_area.setWidgetResizable(True)
@@ -78,7 +78,7 @@ class MSCoreFontsApp(QMainWindow):
             self.checkboxes[filename] = cb
 
         scroll_area.setWidget(cb_container)
-        self.layout.addWidget(scroll_area)
+        self.main_layout.addWidget(scroll_area)
 
         row1_btns = QHBoxLayout()
 
@@ -96,12 +96,12 @@ class MSCoreFontsApp(QMainWindow):
         remove_all_btn.clicked.connect(self.remove_all_fonts)
         row2_btns.addWidget(remove_all_btn)
 
-        self.layout.addLayout(row1_btns)
-        self.layout.addLayout(row2_btns)
+        self.main_layout.addLayout(row1_btns)
+        self.main_layout.addLayout(row2_btns)
 
         self.log = QTextEdit()
         self.log.setReadOnly(True)
-        self.layout.addWidget(self.log)
+        self.main_layout.addWidget(self.log)
 
         self.installer_thread = None
 
@@ -116,8 +116,8 @@ class MSCoreFontsApp(QMainWindow):
                 Author: Troy Harvey<br />
                 License: Apache-2.0<br />
                 Source code available on <a href="https://github.com/HarveyDevel/fonts-installer">GitHub</a><br /><br />
-                Icon taken from breeze-icons.<br />
-                <a href="https://api.kde.org/frameworks/breeze-icons/html/index.html">Breeze icons</a> copyright KDE and licenced under the GNU LGPL version 3 or later. <br /><br />
+                Icon is taken from <a href="https://develop.kde.org/frameworks/breeze-icons/">breeze-icons.</a><br />
+                <a href="https://api.kde.org/frameworks/breeze-icons/html/index.html">Breeze icons</a> copyright KDE and licenced under the GNU LGPL version 3 or later.<br /><br />
                 All fonts are subject to <a href="https://corefonts.sourceforge.net/eula.htm">Microsoft's EULA</a> and
                 are downloaded from <a href="https://corefonts.sourceforge.net/">corefonts SourceForge</a><br />
                 """
@@ -137,10 +137,10 @@ class MSCoreFontsApp(QMainWindow):
             self,
             "Please confirm:",
             f"{FONT_INSTALL_DIR} will be deleted.\nAre you sure you wish to proceed?",
-            QMessageBox.Yes | QMessageBox.No,
+            QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
         )
 
-        if reply == QMessageBox.Yes:
+        if reply == QMessageBox.StandardButton.Yes:
             try:
                 self.log_message("Deleting...")
                 shutil.rmtree(FONT_INSTALL_DIR)

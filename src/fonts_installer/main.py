@@ -32,7 +32,7 @@ def main():
         sys.exit(1)
 
     eula_dialog = EULADialog(eula)
-    if eula_dialog.exec() != QDialog.Accepted:
+    if eula_dialog.exec() != QDialog.DialogCode.Accepted:
         sys.exit(0)
 
     window = MSCoreFontsApp()
