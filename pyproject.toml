@@ -4,12 +4,12 @@ build-backend = "hatchling.build"
 
 [project]
 name = "fonts-installer"
-version = "1.0.0"
+version = "1.1.0"
 license = "Apache-2.0"
 authors = [
     {name = "Troy Harvey", email = "harveydevel@gmail.com"}
 ]
-description = "A Qt6 GUI tool to download and install Microsoft Core Fonts on Linux."
+description = "A Qt6 GUI tool to download and install Microsoft Core Fonts and Aptos Fonts on Linux."
 readme = "README.md"
 classifiers = [
     "Development Status :: 5 - Production/Stable",

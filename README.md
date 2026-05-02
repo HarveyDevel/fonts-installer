@@ -14,6 +14,7 @@ The icon fonts-installer.svg is taken from [breeze-icons](https://develop.kde.or
 [Breeze icons](https://api.kde.org/frameworks/breeze-icons/html/index.html) copyright KDE and licenced under the GNU LGPL version 3 or later
 
 #### Available fonts
+Microsoft Core Fonts:
 - Andale Mono
 - Arial (regular, bold, italic, bold italic)
 - Arial Black
@@ -26,6 +27,9 @@ The icon fonts-installer.svg is taken from [breeze-icons](https://develop.kde.or
 - Verdana (regular, bold, italic, bold italic)
 - Webdings
 
+Microsoft Aptos Fonts:
+- Aptos (regular, mono, narrow, semi bold, bold, extra bold, mono, italic, serif, light, black)
+
 #### Why?
 
 mscorefonts cannot be included in Linux distribution repositories because of licensing issues. However `fonts-installer` can be, making font installation easy for novice users.
@@ -37,4 +41,3 @@ mscorefonts cannot be included in Linux distribution repositories because of lic
 - Qt6
 - p7zip (7z)
 - fontconfig (fc-cache)
-
